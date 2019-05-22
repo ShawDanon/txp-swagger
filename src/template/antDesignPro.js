@@ -15,7 +15,7 @@ const antDesignPro = {
      */
     post: (name, api, desc) => {
       return `\nexport async function ${name}(params) {\n  return request(\`${api}\`, {\n    method: 'POST',\n    body: params\n  });\n} // ${desc}\n`;
-    } //post请求模板
+    }, //post请求模板
   },
   mock: {
     get: (method, api, dec) => {
@@ -23,11 +23,11 @@ const antDesignPro = {
     },
     post: (method, api, dec) => {
       return `\n'${method.toUpperCase()} ${api}':table,`;
-    }
+    },
   },
   models: name => {
     return `\n${name},`;
-  }
+  },
 };
 
 module.exports = antDesignPro;
