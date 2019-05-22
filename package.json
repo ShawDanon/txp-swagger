@@ -4,9 +4,7 @@
   "description": "后端上传 swagger 接口，前端通过 swagger 自动生成 service 接口文件",
   "main": "index.js",
   "scripts": {
-    "start": "npm run hot",
-    "node": "node src/index.js",
-    "hot": "supervisor src/index.js"
+    "node": "node src/index.js"
   },
   "repository": {
     "type": "git",
@@ -18,12 +16,5 @@
   "bugs": {
     "url": "https://github.com/ShawDanon/txp-swagger/issues"
   },
-  "homepage": "https://github.com/ShawDanon/txp-swagger#readme",
-  "dependencies": {
-    "art-template": "^4.13.2",
-    "axios": "^0.18.0",
-    "koa": "^2.6.2",
-    "koa-art-template": "^1.1.1",
-    "koa-router": "^7.4.0"
-  }
+  "homepage": "https://github.com/ShawDanon/txp-swagger#readme"
 }
